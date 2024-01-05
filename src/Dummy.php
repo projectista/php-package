@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Company\Project;
+namespace {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }};
 
 /**
  * @internal

@@ -1,6 +1,6 @@
 <?php
 
-use Company\Project\Dummy;
+use {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\Dummy;
 
 it('works correctly', function () {
     $dummy = new Dummy();

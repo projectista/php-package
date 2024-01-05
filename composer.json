@@ -1,12 +1,12 @@
 {
-    "name": "project/project",
-    "description": "Description",
+    "name": "{{ .VendorName | ToLower | NoWS | Alphanumeric }}/{{ .ProjectName | ToLower | NoWS | Alphanumeric }}",
+    "description": "{{ .ProjectDescription }}",
     "keywords": ["php", "package"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Name",
-            "email": "email@example.com"
+            "name": "{{ .AuthorName }}",
+            "email": "{{ .AuthorEmail }}"
         }
     ],
     "require": {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Company\\Project\\": "src/"
+            "{{ .VendorName | Title | NoWS | Alphanumeric }}\\{{ .ProjectName | Title | NoWS | Alphanumeric }}\\": "src/"
         }
     },
     "autoload-dev": {
