@@ -35,3 +35,8 @@ Run all tests:
 ```bash
 ./vendor/bin/pest
 ```
+
+Run static analysis:
+```bash
+./vendor/bin/phpstan
+```

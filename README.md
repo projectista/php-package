@@ -15,3 +15,23 @@ It contains the following features:
 - Pest testing framework
 - PHPStan static analysis
 - Pint integration
+
+## Testing
+
+### Run tests using Pest
+
+```bash
+./vendor/bin/pest
+```
+
+### Run static analysis using PHPStan
+
+```bash
+./vendor/bin/phpstan
+```
+
+### Lint your code using Pint
+
+```bash
+./vendor/bin/pint
+```
